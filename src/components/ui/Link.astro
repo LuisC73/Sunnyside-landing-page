@@ -1,0 +1,13 @@
+---
+import type { LinkProps } from '@types';
+
+const { label, href, title } = Astro.props as LinkProps;
+---
+
+<a
+  href={href}
+  title={title}
+  class="w-fit font-frauces uppercase tracking-wide font-bold"
+>
+  {label}
+</a>

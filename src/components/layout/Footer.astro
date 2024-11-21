@@ -1,0 +1,40 @@
+---
+import type { FooterProps } from '@types';
+import { Image } from 'astro:assets';
+
+const { logo, items, socialMedia } = Astro.props as FooterProps;
+---
+
+<footer class="bg-primary-cyan">
+  <div>
+    <Image {...logo} />
+  </div>
+  <ul>
+    {
+      items.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            title={item.title}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <ul>
+    {
+      socialMedia.map((item) => (
+        <li>
+          <a
+            href={item.href}
+            title={item.title}
+          >
+            {item.icon}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</footer>

@@ -1,0 +1,15 @@
+---
+import type { HomeProps } from "@types";
+import ArrowDown from "../ui/ArrowDown.astro";
+
+const { image, title } = Astro.props as HomeProps;
+
+const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
+---
+
+<section class={`w-full min-h-screen ${bgClass} flex flex-col gap-20 items-center justify-center bg-cover bg-center bg-no-repeat`}>
+  <h1 class="font-frauces text-5xl sm:text-6xl tracking-wide text-white uppercase font-bold text-center">{title}</h1>
+  <div class="flex items-center justify-center">
+    <ArrowDown />
+  </div>
+</section>

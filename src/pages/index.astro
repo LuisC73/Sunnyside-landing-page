@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  HEADER_CONTENT,
+  HOME_CONTENT,
+  FIRST_SECTION,
+  SECOND_SECTION,
+  SECTIONS_IMAGES,
+  SECTION_TESTIMONIALS,
+  FOOTER_CONTENT,
+} from '@content';
+import HeaderMobile from '@components/layout/HeaderMobile.astro';
+import Home from '@components/sections/Home.astro';
+import Section from '@components/sections/Section.astro';
+import SectionImage from '@components/sections/SectionImage.astro';
+import Card from '@components/ui/Card.astro';
+import Footer from '@components/layout/Footer.astro';
+import Header from '@/components/layout/Header.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <Header {...HEADER_CONTENT} />
+  <HeaderMobile {...HEADER_CONTENT} />
+  <Home {...HOME_CONTENT} />
+  <Section {...FIRST_SECTION} />
+  <Section {...SECOND_SECTION} />
+  <div class="grid grid-cols-1 md:grid-cols-2">
+    {SECTIONS_IMAGES.map((item) => <SectionImage {...item} />)}
+  </div>
+  <section class="bg-primary-white p-20 flex flex-col gap-5">
+    <h6 class="font-frauces font-bold uppercase text-center text-2xl">{SECTION_TESTIMONIALS.title}</h6>
+    <div class="grid grid-cols-cards gap-5">
+      {SECTION_TESTIMONIALS.cards.map((item) => <Card {...item} />)}
+    </div>
+  </section>
+  <Footer {...FOOTER_CONTENT} />
+</Layout>

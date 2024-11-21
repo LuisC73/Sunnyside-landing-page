@@ -1,0 +1,18 @@
+---
+import type { SectionProps } from '@types';
+
+const {
+  tag = 'h2',
+  title,
+  description,
+  image,
+} = Astro.props as Omit<SectionProps, 'link' | 'orientation'>;
+
+const Tag = tag;
+const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
+---
+
+<section class={`${bgClass} p-20 h-[540px] flex flex-col gap-5 justify-end items-center`}>
+  <Tag class="text-center font-frauces font-bold text-2xl">{title}</Tag>
+  <p class="text-center font-barlow text-base">{description}</p>
+</section>

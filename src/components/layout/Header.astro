@@ -1,0 +1,33 @@
+---
+import type { HeaderProps } from '@types';
+import { Image } from 'astro:assets';
+
+const { logo, items, button } = Astro.props as HeaderProps;
+---
+
+<header class="fixed top-0 left-0 w-full hidden md:flex items-center justify-between gap-5 p-5 z-20">
+  <Image {...logo.desktop} />
+  <div class="flex items-center gap-8">
+    <ul class="flex items-center gap-8">
+      {
+        items.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              title={item.title}
+              class="font-barlow text-base font-medium text-white"
+            >
+              {item.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <a
+      href={button.href}
+      title={button.title}
+      class="py-4 px-6 bg-white rounded-full font-frauces font-bold uppercase text-sm tracking-wide"
+      >{button.label}</a
+    >
+  </div>
+</header>
