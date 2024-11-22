@@ -1,4 +1,4 @@
-<h1 align="center">👋 Frontend Mentor - Sunnyside agency landing page 🚀</h1>
+<h1 align="center">Frontend Mentor - Sunnyside agency landing page</h1>
 
 <div align="center">
   <h3>
