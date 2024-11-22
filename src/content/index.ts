@@ -1,4 +1,11 @@
-import type { FooterProps, HeaderProps, HomeProps, SectionProps, TestimonialsProps } from '@types';
+import type {
+  CardImage,
+  FooterProps,
+  HeaderProps,
+  HomeProps,
+  SectionProps,
+  TestimonialsProps,
+} from '@types';
 
 export const CONFIG = {};
 
@@ -15,7 +22,7 @@ export const HEADER_CONTENT: HeaderProps = {
       'alt': 'Sunnyside logo',
       'width': 120,
       'height': 60,
-    }
+    },
   },
   'items': [
     {
@@ -148,12 +155,39 @@ export const SECTION_TESTIMONIALS: TestimonialsProps = {
   ],
 };
 
+export const CARDS_IMAGES: CardImage[] = [
+  {
+    'image': {
+      'desktop': '/images/desktop/image-gallery-milkbottles.jpg',
+      'mobile': '/images/mobile/image-gallery-milkbottles.jpg',
+    },
+  },
+  {
+    'image': {
+      'desktop': '/images/desktop/image-gallery-orange.jpg',
+      'mobile': '/images/mobile/image-gallery-orange.jpg',
+    },
+  },
+  {
+    'image': {
+      'desktop': '/images/desktop/image-gallery-cone.jpg',
+      'mobile': '/images/mobile/image-gallery-cone.jpg',
+    },
+  },
+  {
+    'image': {
+      'desktop': '/images/desktop/image-gallery-sugarcubes.jpg',
+      'mobile': '/images/mobile/image-gallery-sugarcubes.jpg',
+    },
+  },
+];
+
 export const FOOTER_CONTENT: FooterProps = {
   'logo': {
-    'src': '/images/logo.svg',
-    'alt': '',
-    'width': 120,
-    'height': 60,
+    'src': '/images/logo-variant.svg',
+    'alt': 'Sunnyside Logo',
+    'width': 140,
+    'height': 80,
   },
   'items': [
     {

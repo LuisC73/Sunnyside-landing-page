@@ -5,7 +5,21 @@ import { Image } from 'astro:assets';
 const { logo, items, button } = Astro.props as HeaderProps;
 ---
 
-<header class="fixed top-0 left-0 w-full hidden md:flex items-center justify-between gap-5 p-5 z-20">
+<script>
+  const header = document.querySelector<HTMLHeadingElement>('#header');
+
+  const addBackgroundMenu = () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      header?.classList.add('bg-black/30');
+    } else {
+      header?.classList.remove('bg-black/30');
+    }
+  };
+
+  window?.addEventListener('scroll', addBackgroundMenu);
+</script>
+
+<header class="fixed top-0 left-0 w-full hidden md:flex items-center justify-between gap-5 p-5 z-20" id="header">
   <Image {...logo.desktop} />
   <div class="flex items-center gap-8">
     <ul class="flex items-center gap-8">

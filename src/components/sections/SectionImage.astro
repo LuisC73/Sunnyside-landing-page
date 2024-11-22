@@ -12,7 +12,7 @@ const Tag = tag;
 const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
 ---
 
-<section class={`${bgClass} p-20 h-[540px] flex flex-col gap-5 justify-end items-center`}>
+<section class={`${bgClass} bg-cover bg-no-repeat bg-center p-20 h-[620px] md:h-[540px] flex flex-col gap-5 justify-end items-center`}>
   <Tag class="text-center font-frauces font-bold text-2xl">{title}</Tag>
   <p class="text-center font-barlow text-base">{description}</p>
 </section>

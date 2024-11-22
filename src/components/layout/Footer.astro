@@ -1,21 +1,21 @@
 ---
 import type { FooterProps } from '@types';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 
 const { logo, items, socialMedia } = Astro.props as FooterProps;
 ---
 
-<footer class="bg-primary-cyan">
-  <div>
-    <Image {...logo} />
-  </div>
-  <ul>
+<footer class="bg-primary-cyan p-10 flex flex-col gap-10 items-center justify-center">
+  <Image {...logo} />
+  <ul class="flex flex-wrap gap-5 items-center justify-center">
     {
       items.map((item) => (
         <li>
           <a
             href={item.href}
             title={item.title}
+            class="font-barlow text-primary-desaturated-cyan"
           >
             {item.label}
           </a>
@@ -23,15 +23,19 @@ const { logo, items, socialMedia } = Astro.props as FooterProps;
       ))
     }
   </ul>
-  <ul>
+  <ul class="flex flex-wrap gap-5 items-center justify-center">
     {
       socialMedia.map((item) => (
         <li>
           <a
             href={item.href}
             title={item.title}
+            class="inline-flex items-center justify-center"
           >
-            {item.icon}
+            <Icon
+              name={item.icon}
+              size={18}
+            />
           </a>
         </li>
       ))

@@ -11,7 +11,15 @@ export default {
 		"bg-[url('/images/mobile/image-graphic-design.jpg')]",
 		"md:bg-[url('/images/desktop/image-graphic-design.jpg')]",
 		"bg-[url('/images/mobile/image-photography.jpg')]",
-		"md:bg-[url('/images/desktop/image-photography.jpg')]"
+		"md:bg-[url('/images/desktop/image-photography.jpg')]",
+		"bg-[url('/images/mobile/image-gallery-milkbottles.jpg')]",
+		"md:bg-[url('/images/desktop/image-gallery-milkbottles.jpg')]",
+		"bg-[url('/images/mobile/image-gallery-orange.jpg')]",
+		"md:bg-[url('/images/desktop/image-gallery-orange.jpg')]",
+		"bg-[url('/images/mobile/image-gallery-cone.jpg')]",
+		"md:bg-[url('/images/desktop/image-gallery-cone.jpg')]",
+		"bg-[url('/images/mobile/image-gallery-sugarcubes.jpg')]",
+		"md:bg-[url('/images/desktop/image-gallery-sugarcubes.jpg')]",
 	],
 	theme: {
 		extend: {
@@ -20,7 +28,7 @@ export default {
 					'red': '#fe7867',
 					'yellow': '#fad400',
 					'desaturated-cyan': '#25564b',
-					'cyan': '#458c7e',
+					'cyan': '#90d4c5',
 					'white': '#fffbf8'
 				},
 				'secondary': {

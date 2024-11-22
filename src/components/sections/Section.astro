@@ -10,12 +10,14 @@ const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
 
 <section class="grid grid-cols-1 md:grid-cols-2">
   <div
-    class={`bg-primary-white px-20 py-40 flex flex-col gap-5 ${orientation === 'Left' && 'order-2'}`}
+    class={`bg-primary-white px-20 py-40 flex flex-col gap-5 order-2 ${orientation === 'Left' ? 'md:order-2' : 'md:order-1'}`}
   >
     <Tag class="font-frauces font-bold text-5xl">{title}</Tag>
     <p class="font-barlow">{description}</p>
     <Link {...link} />
   </div>
-  <div class={`${bgClass} bg-no-repeat bg-cover bg-center ${orientation === 'Left' && 'order-1'}`}>
+  <div
+    class={`h-[400px] md:h-full ${bgClass} bg-no-repeat bg-cover bg-center order-1 ${orientation === 'Left' ? 'md:order-1' : 'md:order-2'}`}
+  >
   </div>
 </section>

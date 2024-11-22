@@ -53,3 +53,7 @@ export interface TestimonialsProps {
   title: string;
   cards: CardProps[];
 }
+
+export interface CardImage {
+  image: { desktop: string; mobile: string };
+}
