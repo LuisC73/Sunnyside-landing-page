@@ -14,7 +14,7 @@ export const CONFIG: SiteConfig = {
   'keywords': 'Luis Miguel Castro, Frontend, Frontend Mentor, landing page, Sunnyside, project',
   'canonicalURL': 'https://luisc73.github.io/Sunnyside-landing-page/',
   'socialImage': '/open-graph.jpg',
-  'favicon': '/favicon.png'
+  'favicon': '/Sunnyside-landing-page/favicon.png'
 };
 
 export const HEADER_CONTENT: HeaderProps = {
