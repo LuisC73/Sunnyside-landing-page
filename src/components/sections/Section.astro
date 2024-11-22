@@ -10,10 +10,13 @@ const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
 
 <section class="grid grid-cols-1 md:grid-cols-2">
   <div
-    class={`bg-primary-white px-20 py-40 flex flex-col gap-5 order-2 ${orientation === 'Left' ? 'md:order-2' : 'md:order-1'}`}
+    class={`bg-primary-white px-5 md:px-10 lg:px-20 py-40 flex flex-col gap-5 items-center md:items-start order-2 ${orientation === 'Left' ? 'md:order-2' : 'md:order-1'}`}
   >
-    <Tag class="font-frauces font-bold text-5xl">{title}</Tag>
-    <p class="font-barlow">{description}</p>
+    <Tag
+      class="font-frauces font-bold text-4xl md:text-5xl text-center md:text-left text-secondary-desaturated-blue tracking-normal"
+      >{title}</Tag
+    >
+    <p class="font-barlow text-secondary-dark-blue text-center md:text-left">{description}</p>
     <Link {...link} />
   </div>
   <div

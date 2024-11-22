@@ -5,11 +5,13 @@ import { Image } from 'astro:assets';
 const { image, description, name, job } = Astro.props as CardProps;
 ---
 
-<div class="flex flex-col gap-5 items-center">
+<div class="flex flex-col gap-10 items-center justify-center">
   <div class="rounded-full overflow-hidden w-[80px] h-[80px]">
     <Image {...image} />
   </div>
-  <p class="text-center font-barlow">{description}</p>
-  <h4 class="font-frauces font-bold">{name}</h4>
-  <p class="font-barlow text-sm">{job}</p>
+  <p class="text-center font-barlow text-secondary-dark-blue text-base font-medium">{description}</p>
+  <div class="flex flex-col gap-2 items-center">
+    <h4 class="text-base font-frauces font-bold text-secondary-desaturated-blue text-center">{name}</h4>
+    <p class="font-barlow text-sm text-secondary-grayish-blue text-center">{job}</p>
+  </div>
 </div>

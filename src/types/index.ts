@@ -11,6 +11,7 @@ interface BackgroundImageProps {
 }
 
 export interface LinkProps {
+  type: 'Primary' | 'Secondary';
   label: string;
   href: string;
   title: string;
@@ -18,13 +19,13 @@ export interface LinkProps {
 
 export interface HeaderProps {
   logo: { desktop: ImageProps; mobile: ImageProps };
-  items: LinkProps[];
-  button: LinkProps;
+  items: Omit<LinkProps, 'type'>[];
+  button: Omit<LinkProps, 'type'>;
 }
 
 export interface FooterProps {
   logo: ImageProps;
-  items: LinkProps[];
+  items: Omit<LinkProps, 'type'>[];
   socialMedia: { icon: string; href: string; title: string }[];
 }
 

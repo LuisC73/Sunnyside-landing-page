@@ -28,6 +28,7 @@ export default {
 					'red': '#fe7867',
 					'yellow': '#fad400',
 					'desaturated-cyan': '#25564b',
+					'dark-blue': '#19536b',
 					'cyan': '#90d4c5',
 					'white': '#fffbf8'
 				},

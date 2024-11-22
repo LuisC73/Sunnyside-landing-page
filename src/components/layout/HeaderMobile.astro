@@ -28,12 +28,12 @@ const { logo, items, button } = Astro.props as HeaderProps;
 </script>
 
 <header
-  class="fixed top-0 left-0 w-full flex items-center justify-between md:hidden p-5 z-20"
+  class="fixed top-0 left-0 w-full flex items-center justify-between md:hidden p-5 z-20 transition"
   id="headerMobile"
 >
   <Image {...logo.mobile} />
   <div
-    class="absolute top-20 left-1/2 w-[calc(100%_-_40px)] p-5 flex flex-col gap-5 items-center justify-center bg-white -translate-x-1/2 opacity-0"
+    class="absolute top-20 left-1/2 w-[calc(100%_-_40px)] p-5 flex flex-col gap-5 items-center justify-center bg-white -translate-x-1/2 opacity-0 transition shadow-md"
     id="menu"
   >
     <div
@@ -47,7 +47,7 @@ const { logo, items, button } = Astro.props as HeaderProps;
             <a
               href={item.href}
               title={item.title}
-              class="font-barlow text-lg font-medium text-secondary-dark-blue"
+              class="font-barlow text-lg font-medium text-secondary-dark-blue hover:underline transition"
             >
               {item.label}
             </a>
@@ -58,7 +58,7 @@ const { logo, items, button } = Astro.props as HeaderProps;
     <a
       href={button.href}
       title={button.title}
-      class="py-4 px-6 bg-primary-yellow rounded-full font-frauces font-bold uppercase text-base tracking-wide"
+      class="py-4 px-6 bg-primary-yellow hover:bg-primary-yellow/30 focus:bg-primary-yellow/30 rounded-full font-frauces font-bold uppercase text-base tracking-wide transition"
       >{button.label}</a
     >
   </div>

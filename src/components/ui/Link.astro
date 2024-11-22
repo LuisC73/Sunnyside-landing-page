@@ -1,13 +1,16 @@
 ---
 import type { LinkProps } from '@types';
 
-const { label, href, title } = Astro.props as LinkProps;
+const { type = 'Primary', label, href, title } = Astro.props as LinkProps;
 ---
 
 <a
   href={href}
   title={title}
-  class="w-fit font-frauces uppercase tracking-wide font-bold"
+  class="relative w-fit text-center md:text-left"
 >
-  {label}
+  <div class={`absolute left-0 bottom-0 w-full h-1/3 z-0 ${type === 'Primary' ? 'bg-primary-yellow/30' : 'bg-primary-red/30'}`}></div>
+  <span class="relative z-[1] text-secondary-desaturated-blue font-frauces uppercase tracking-wider font-bold">
+    {label}
+  </span>
 </a>
