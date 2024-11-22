@@ -26,7 +26,7 @@ export const HEADER_CONTENT: HeaderProps = {
       'height': 80,
     },
     'mobile': {
-      'src': '/images/logo.svg',
+      'src': '/Sunnyside-landing-page/images/logo.svg',
       'alt': 'Sunnyside logo',
       'width': 120,
       'height': 60,

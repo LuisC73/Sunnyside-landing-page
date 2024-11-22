@@ -16,9 +16,9 @@ export default {
 		"md:bg-[url('/Sunnyside-landing-page/images/desktop/image-gallery-milkbottles.jpg')]",
 		"bg-[url('/Sunnyside-landing-page/images/mobile/image-gallery-orange.jpg')]",
 		"md:bg-[url('/Sunnyside-landing-page/images/desktop/image-gallery-orange.jpg')]",
-		"bg-[url('/images/mobile/image-gallery-cone.jpg')]",
+		"bg-[url('/Sunnyside-landing-page/images/mobile/image-gallery-cone.jpg')]",
 		"md:bg-[url('/Sunnyside-landing-page/images/desktop/image-gallery-cone.jpg')]",
-		"bg-[url('/images/mobile/image-gallery-sugarcubes.jpg')]",
+		"bg-[url('/Sunnyside-landing-page/images/mobile/image-gallery-sugarcubes.jpg')]",
 		"md:bg-[url('/Sunnyside-landing-page/images/desktop/image-gallery-sugarcubes.jpg')]",
 	],
 	theme: {

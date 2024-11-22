@@ -8,9 +8,9 @@ const Tag = tag;
 const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
 ---
 
-<section class="grid grid-cols-1 md:grid-cols-2">
+<section class="grid grid-cols-1 md:grid-cols-2 md:h-[540px] lg:h-[600px] xl:h-[640px]">
   <div
-    class={`bg-primary-white px-5 md:px-10 lg:px-20 py-40 flex flex-col gap-7 items-center md:items-start order-2 ${orientation === 'Left' ? 'md:order-2' : 'md:order-1'}`}
+    class={`bg-primary-white px-5 md:px-10 lg:px-20 2xl:px-40 py-40 flex flex-col gap-7 items-center justify-center md:items-start order-2 ${orientation === 'Left' ? 'md:order-2' : 'md:order-1'}`}
   >
     <Tag
       class="font-frauces font-bold text-4xl md:text-5xl text-center md:text-left text-secondary-desaturated-blue tracking-normal"
