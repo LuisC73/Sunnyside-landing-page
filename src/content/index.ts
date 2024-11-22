@@ -4,10 +4,18 @@ import type {
   HeaderProps,
   HomeProps,
   SectionProps,
+  SiteConfig,
   TestimonialsProps,
 } from '@types';
 
-export const CONFIG = {};
+export const CONFIG: SiteConfig = {
+  'title': 'Frontend Mentor | Sunnyside agency landing page',
+  'description': 'Sunnyside landing page, a Frontend Mentor challenge developed by Luis Miguel Castro.',
+  'keywords': 'Luis Miguel Castro, Frontend, Frontend Mentor, landing page, Sunnyside, project',
+  'canonicalURL': 'https://luisc73.github.io/Sunnyside-landing-page/',
+  'socialImage': '/open-graph.jpg',
+  'favicon': '/favicon.png'
+};
 
 export const HEADER_CONTENT: HeaderProps = {
   'logo': {

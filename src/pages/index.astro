@@ -9,6 +9,7 @@ import {
   SECTION_TESTIMONIALS,
   FOOTER_CONTENT,
   CARDS_IMAGES,
+  CONFIG,
 } from '@content';
 import HeaderMobile from '@components/layout/HeaderMobile.astro';
 import Home from '@components/sections/Home.astro';
@@ -20,7 +21,7 @@ import Footer from '@components/layout/Footer.astro';
 import Header from '@/components/layout/Header.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout config={CONFIG}>
   <Header {...HEADER_CONTENT} />
   <HeaderMobile {...HEADER_CONTENT} />
   <Home {...HOME_CONTENT} />

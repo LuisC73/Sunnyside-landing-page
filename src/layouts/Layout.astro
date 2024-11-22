@@ -1,23 +1,39 @@
 ---
 import '@fontsource/barlow';
 import '@fontsource-variable/fraunces';
+import type { SiteConfig } from '@types';
 
 interface Props {
-	title: string;
+	config: SiteConfig;
 }
 
-const { title } = Astro.props;
+const { config } = Astro.props;
+
+const ogImgUrl = config.canonicalURL + config.socialImage;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+    <meta name="description" content={config.description} />
+    <meta name="keywords" content={config.keywords} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" href={config.favicon} />
+		<link rel="canonical" href={config.canonicalURL} />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{config.title}</title>
+
+		<meta property="og:title" content={config.title} />
+    <meta property="og:description" content={config.description} />
+    <meta property="og:url" content={config.canonicalURL} />
+    <meta property="og:image" content={ogImgUrl} />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={config.canonicalURL} />
+    <meta property="twitter:title" content={config.title} />
+    <meta property="twitter:description" content={config.description} />
+    <meta property="twitter:image" content={ogImgUrl} />
 	</head>
 	<body>
 		<slot />

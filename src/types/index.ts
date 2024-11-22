@@ -65,3 +65,12 @@ export interface ArrowDownProps {
   title: string;
   ariaLabel: string;
 }
+
+export interface SiteConfig {
+  title: string;
+  description: string;
+  keywords: string;
+  canonicalURL: string;
+  socialImage: string;
+  favicon: string;
+} 
