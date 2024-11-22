@@ -2,7 +2,7 @@
 import type { HomeProps } from '@types';
 import ArrowDown from '../ui/ArrowDown.astro';
 
-const { image, title } = Astro.props as HomeProps;
+const { image, title, arrow } = Astro.props as HomeProps;
 
 const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
 ---
@@ -16,6 +16,6 @@ const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
     {title}
   </h1>
   <div class="flex items-center justify-center">
-    <ArrowDown />
+    <ArrowDown {...arrow} />
   </div>
 </section>

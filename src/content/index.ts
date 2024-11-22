@@ -20,7 +20,7 @@ export const CONFIG: SiteConfig = {
 export const HEADER_CONTENT: HeaderProps = {
   'logo': {
     'desktop': {
-      'src': '/images/logo.svg',
+      'src': '/Sunnyside-landing-page/images/logo.svg',
       'alt': 'Sunnyside logo',
       'width': 160,
       'height': 80,
@@ -58,8 +58,8 @@ export const HEADER_CONTENT: HeaderProps = {
 
 export const HOME_CONTENT: HomeProps = {
   'image': {
-    'desktop': '/images/desktop/image-header.jpg',
-    'mobile': '/images/mobile/image-header.jpg',
+    'desktop': '/Sunnyside-landing-page/images/desktop/image-header.jpg',
+    'mobile': '/Sunnyside-landing-page/images/mobile/image-header.jpg',
   },
   'title': 'We are creatives',
   'arrow': {
@@ -81,8 +81,8 @@ export const FIRST_SECTION: SectionProps = {
     'title': 'Learn more',
   },
   'image': {
-    'desktop': '/images/desktop/image-transform.jpg',
-    'mobile': '/images/mobile/image-transform.jpg',
+    'desktop': '/Sunnyside-landing-page/images/desktop/image-transform.jpg',
+    'mobile': '/Sunnyside-landing-page/images/mobile/image-transform.jpg',
   },
   'orientation': 'Right',
 };
@@ -99,8 +99,8 @@ export const SECOND_SECTION: SectionProps = {
     'title': 'Learn more',
   },
   'image': {
-    'desktop': '/images/desktop/image-stand-out.jpg',
-    'mobile': '/images/mobile/image-stand-out.jpg',
+    'desktop': '/Sunnyside-landing-page/images/desktop/image-stand-out.jpg',
+    'mobile': '/Sunnyside-landing-page/images/mobile/image-stand-out.jpg',
   },
   'orientation': 'Left',
 };
@@ -112,8 +112,8 @@ export const SECTIONS_IMAGES: Omit<SectionProps, 'link' | 'orientation'>[] = [
     'description':
       'Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.',
     'image': {
-      'desktop': '/images/desktop/image-graphic-design.jpg',
-      'mobile': '/images/mobile/image-graphic-design.jpg',
+      'desktop': '/Sunnyside-landing-page/images/desktop/image-graphic-design.jpg',
+      'mobile': '/Sunnyside-landing-page/images/mobile/image-graphic-design.jpg',
     },
   },
   {
@@ -122,8 +122,8 @@ export const SECTIONS_IMAGES: Omit<SectionProps, 'link' | 'orientation'>[] = [
     'description':
       'Increase your credibility by getting the most stunning, high-quality photos that improve your business image.',
     'image': {
-      'desktop': '/images/desktop/image-photography.jpg',
-      'mobile': '/images/mobile/image-photography.jpg',
+      'desktop': '/Sunnyside-landing-page/images/desktop/image-photography.jpg',
+      'mobile': '/Sunnyside-landing-page/images/mobile/image-photography.jpg',
     },
   },
 ];
@@ -133,8 +133,8 @@ export const SECTION_TESTIMONIALS: TestimonialsProps = {
   'cards': [
     {
       'image': {
-        'src': '/images/image-emily.jpg',
-        'alt': '',
+        'src': '/Sunnyside-landing-page/images/image-emily.jpg',
+        'alt': 'Emily',
         'width': 80,
         'height': 80,
       },
@@ -145,8 +145,8 @@ export const SECTION_TESTIMONIALS: TestimonialsProps = {
     },
     {
       'image': {
-        'src': '/images/image-thomas.jpg',
-        'alt': '',
+        'src': '/Sunnyside-landing-page/images/image-thomas.jpg',
+        'alt': 'Thomas',
         'width': 80,
         'height': 80,
       },
@@ -157,8 +157,8 @@ export const SECTION_TESTIMONIALS: TestimonialsProps = {
     },
     {
       'image': {
-        'src': '/images/image-jennie.jpg',
-        'alt': '',
+        'src': '/Sunnyside-landing-page/images/image-jennie.jpg',
+        'alt': 'Jennie',
         'width': 80,
         'height': 80,
       },
@@ -173,33 +173,33 @@ export const SECTION_TESTIMONIALS: TestimonialsProps = {
 export const CARDS_IMAGES: CardImageProps[] = [
   {
     'image': {
-      'desktop': '/images/desktop/image-gallery-milkbottles.jpg',
-      'mobile': '/images/mobile/image-gallery-milkbottles.jpg',
+      'desktop': '/Sunnyside-landing-page/images/desktop/image-gallery-milkbottles.jpg',
+      'mobile': '/Sunnyside-landing-page/images/mobile/image-gallery-milkbottles.jpg',
     },
   },
   {
     'image': {
-      'desktop': '/images/desktop/image-gallery-orange.jpg',
-      'mobile': '/images/mobile/image-gallery-orange.jpg',
+      'desktop': '/Sunnyside-landing-page/images/desktop/image-gallery-orange.jpg',
+      'mobile': '/Sunnyside-landing-page/images/mobile/image-gallery-orange.jpg',
     },
   },
   {
     'image': {
-      'desktop': '/images/desktop/image-gallery-cone.jpg',
-      'mobile': '/images/mobile/image-gallery-cone.jpg',
+      'desktop': '/Sunnyside-landing-page/images/desktop/image-gallery-cone.jpg',
+      'mobile': '/Sunnyside-landing-page/images/mobile/image-gallery-cone.jpg',
     },
   },
   {
     'image': {
-      'desktop': '/images/desktop/image-gallery-sugarcubes.jpg',
-      'mobile': '/images/mobile/image-gallery-sugarcubes.jpg',
+      'desktop': '/Sunnyside-landing-page/images/desktop/image-gallery-sugarcubes.jpg',
+      'mobile': '/Sunnyside-landing-page/images/mobile/image-gallery-sugarcubes.jpg',
     },
   },
 ];
 
 export const FOOTER_CONTENT: FooterProps = {
   'logo': {
-    'src': '/images/logo-variant.svg',
+    'src': '/Sunnyside-landing-page/images/logo-variant.svg',
     'alt': 'Sunnyside Logo',
     'width': 140,
     'height': 80,
