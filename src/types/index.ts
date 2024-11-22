@@ -26,7 +26,7 @@ export interface HeaderProps {
 export interface FooterProps {
   logo: ImageProps;
   items: Omit<LinkProps, 'type'>[];
-  socialMedia: { icon: string; href: string; title: string }[];
+  socialMedia: { icon: string; href: string; title: string; ariaLabel: string }[];
 }
 
 export interface CardProps {
@@ -48,6 +48,7 @@ export interface SectionProps {
 export interface HomeProps {
   title: string;
   image: BackgroundImageProps;
+  arrow: ArrowDownProps;
 }
 
 export interface TestimonialsProps {
@@ -55,6 +56,12 @@ export interface TestimonialsProps {
   cards: CardProps[];
 }
 
-export interface CardImage {
+export interface CardImageProps {
   image: { desktop: string; mobile: string };
+}
+
+export interface ArrowDownProps {
+  href: string;
+  title: string;
+  ariaLabel: string;
 }

@@ -1,7 +1,7 @@
 ---
-import type { CardImage } from "@/types";
+import type { CardImageProps } from "@/types";
 
-const { image } = Astro.props as CardImage;
+const { image } = Astro.props as CardImageProps;
 
 const bgClass = `bg-[url('${image.mobile}')] md:bg-[url('${image.desktop}')]`;
 ---

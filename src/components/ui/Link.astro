@@ -7,9 +7,9 @@ const { type = 'Primary', label, href, title } = Astro.props as LinkProps;
 <a
   href={href}
   title={title}
-  class="relative w-fit text-center md:text-left"
+  class="relative w-fit text-center md:text-left group"
 >
-  <div class={`absolute left-0 bottom-0 w-full h-1/3 z-0 ${type === 'Primary' ? 'bg-primary-yellow/30' : 'bg-primary-red/30'}`}></div>
+  <div class={`absolute left-0 bottom-0 w-full h-1/3 z-0 transition rounded-md ${type === 'Primary' ? 'bg-primary-yellow/30 group-hover:bg-primary-yellow' : 'bg-primary-red/30 group-hover:bg-primary-red'}`}></div>
   <span class="relative z-[1] text-secondary-desaturated-blue font-frauces uppercase tracking-wider font-bold">
     {label}
   </span>

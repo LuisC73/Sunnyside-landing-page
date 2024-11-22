@@ -1,5 +1,5 @@
 import type {
-  CardImage,
+  CardImageProps,
   FooterProps,
   HeaderProps,
   HomeProps,
@@ -54,6 +54,11 @@ export const HOME_CONTENT: HomeProps = {
     'mobile': '/images/mobile/image-header.jpg',
   },
   'title': 'We are creatives',
+  'arrow': {
+    'href': '#first-section',
+    'title': 'Scroll down',
+    'ariaLabel': 'Scroll down button'
+  }
 };
 
 export const FIRST_SECTION: SectionProps = {
@@ -157,7 +162,7 @@ export const SECTION_TESTIMONIALS: TestimonialsProps = {
   ],
 };
 
-export const CARDS_IMAGES: CardImage[] = [
+export const CARDS_IMAGES: CardImageProps[] = [
   {
     'image': {
       'desktop': '/images/desktop/image-gallery-milkbottles.jpg',
@@ -207,32 +212,31 @@ export const FOOTER_CONTENT: FooterProps = {
       'href': '#',
       'title': 'Projects',
     },
-    {
-      'label': 'Contact',
-      'href': '#',
-      'title': 'Contact',
-    },
   ],
   'socialMedia': [
     {
       'icon': 'facebook',
       'href': '#',
       'title': 'facebook',
+      'ariaLabel': 'facebook',
     },
     {
       'icon': 'instagram',
       'href': '#',
       'title': 'instagram',
+      'ariaLabel': 'facebook',
     },
     {
       'icon': 'twitter',
       'href': '#',
       'title': 'twitter',
+      'ariaLabel': 'facebook',
     },
     {
       'icon': 'pinterest',
       'href': '#',
       'title': 'pinterest',
+      'ariaLabel': 'facebook',
     },
   ],
 };
